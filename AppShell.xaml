@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Top6Yokozuna.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Top6Yokozuna"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.FlyoutWidth="300"
+    FlyoutIcon="flyouticon.png">
+
+
+
+    <Shell.FlyoutHeader>
+        <Grid >
+            <Image />
+            <Label FontAttributes="Bold" Text="Top 6 Yokozuna" FontSize="Large" HeightRequest="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontFamily="riit"/>
+        </Grid>
+    </Shell.FlyoutHeader>
+
+
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid>
+                <Label FontAttributes="Bold" Margin="10,0,0,0" Text="{Binding Title}" FontSize="Medium" VerticalTextAlignment="Center" FontFamily="riit" HorizontalTextAlignment="Center" />
+                <Image Margin="0,70,0,0" Source="images.png" HeightRequest="45" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+
+    <FlyoutItem Title="I. Hakuho Sho" >
+        <ShellContent ContentTemplate="{DataTemplate local:Page1}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="II. Taiho Koki">
+        <ShellContent ContentTemplate="{DataTemplate local:Page2}" />
+    </FlyoutItem>
+    <FlyoutItem Title="III. Chiyonofuji Mitsugu">
+        <ShellContent ContentTemplate="{DataTemplate local:Page3}" />
+    </FlyoutItem>
+    <FlyoutItem Title="IV. Asashoryu Akinori">
+        <ShellContent ContentTemplate="{DataTemplate local:Page4}" />
+    </FlyoutItem>
+    <FlyoutItem Title="V. Kitanoumi Toshimitsu">
+        <ShellContent ContentTemplate="{DataTemplate local:Page5}" />
+    </FlyoutItem>
+    <FlyoutItem Title="VI. Takanohana Koji">
+        <ShellContent ContentTemplate="{DataTemplate local:Page6}" />
+    </FlyoutItem>
+</Shell>

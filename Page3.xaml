@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tool="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:Class="Top6Yokozuna.Page3"
+             Title="III. Chiyonofuji Mitsugu"         
+             Shell.BackgroundColor="Black"
+             BackgroundImageSource="dohyo.jpg">
+    <ContentPage.Behaviors>
+        <tool:StatusBarBehavior StatusBarColor="Black"/>
+    </ContentPage.Behaviors>
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontFamily" Value="riit"/>
+            <Setter Property="FontSize" Value="Body"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+    </ContentPage.Resources>
+    <Grid RowDefinitions="2*,3*">
+        <Border
+Stroke="#C49B33"
+StrokeThickness="6"
+StrokeShape="RoundRectangle 40,40,40,40"
+HorizontalOptions="Center"
+    Margin="0,100,0,0"
+    HeightRequest="350">
+            <Image Source="chiyonofuji.jpg" />
+        </Border>
+        <ScrollView  Grid.Row="1" Margin="0,80,0,0">
+        <StackLayout Padding="5">
+                <Label Text="Real name: Mitsugu Akimoto"/>
+                <Label Text="Born: June 1, 1955
+                             Hokkaido, Japan"/>
+                <Label Text="Died: July 31, 2016 (aged 61)
+                            Tokyo, Japan"/>
+                <Label   Text="Height: 6 ft 0 in (1.83 m)"/>
+                <Label   Text="Weight: 278 Ib (126 kg)"/>
+                <Label   Text="Stable: Kokonoe"/>
+                <Label   Text="Debut: September 1970"/>
+                <Label   Text="Retired: May 1991"/>
+                <Label   Text="Yusho (tournaments won): 31 Makuuchi, 1 Makushita"/>
+                <Label Margin="0,40,0,0" Text="He was born in Fukushima, a town in Hokkaido, northern Japan. He was a son of a fisherman. At school he excelled in athletics events, particularly running. He was scouted at the age of 15 by Kokonoe stable's head, and became a sumo wrestler."/>
+                <Label Margin="0,40,0,0" Text="As an immensely young wrestler, at the beginning only 71 kg, he needed precisely 11 years to became Yokozuna in the September of 1981, at the age of 26. He wasn't the biggest and strongest wrestler of the era, but had the genius to work hard, to be successful. With this attitude he was dominating the tournaments until the end of the next year, when a rival Yokozuna, Takanosato emerged."/>
+                <Label Margin="0,40,0,0" Text="Following his retirement from the ring in May 1991, Chiyonofuji inherited the elder name of Jinmaku, then in 1992 he purchased the Kokonoe stable. Under his leadership, the stable produced several top wrestlers. As of March 2016, Kokonoe stable is one of the most successful stables in sumo in terms of quantity of top wrestlers."/>
+                <Label Margin="0,40,0,0" Text="Having reportedly told associates that cancer had spread to his heart and lungs, he had been hospitalized since the fourth day of the Nagoya tournament in 2016. He died in Tokyo on July 31, 2016 at the age of 61."/>
+            </StackLayout>
+    </ScrollView>
+    </Grid>
+</ContentPage>

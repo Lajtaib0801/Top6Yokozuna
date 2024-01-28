@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tool="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:Class="Top6Yokozuna.Page1"
+             Title="I. Hakuhō Shō"
+             Shell.BackgroundColor="Black"
+             BackgroundImageSource="dohyo.jpg">
+    <ContentPage.Behaviors>
+        <tool:StatusBarBehavior StatusBarColor="Black"/>
+    </ContentPage.Behaviors>
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontFamily" Value="riit"/>
+            <Setter Property="FontSize" Value="Body"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+    </ContentPage.Resources>
+        <Grid RowDefinitions="2*,3*">
+
+            <Border
+        Stroke="#C49B33"
+        StrokeThickness="6"
+        StrokeShape="RoundRectangle 40,40,40,40"
+        HorizontalOptions="Center"
+            Margin="0,100,0,0"
+            HeightRequest="350">
+                <Image Source="hakuho.jpg" />
+            </Border>
+        <ScrollView Grid.Row="1" Margin="0,80,0,0">
+            <StackLayout Padding="5">
+                <Label Text="Real name: Monkhbatyn Davaajargal (Мөнхбатын Даваажаргал)"/>
+                <Label   Text="Born: March 11, 1985
+                               Ulaanbaatar, Mongolia"/>
+                <Label   Text="Height: 6 ft 4 in (1.92 m)"/>
+                <Label   Text="Weight: 333 Ib (151 kg)"/>
+                <Label   Text="Stable: Miyagino"/>
+                <Label   Text="Debut: March 2001"/>
+                <Label   Text="Retired: March 2021"/>
+                <Label   Text="Yusho (tournaments won): 45 Makuuchi, 1 Juryo"/>
+
+                <Label Margin="0,40,0,0" Text="Like many of his countrymen he came from a family which has a huge tradition of Mongolian wrestling. He proved his talent in Mongolian wrestling since his young age, so despite his below average in size, he could acquire the approval to a sumo stable in Japan, this was the Miyagino stable."/>
+                <Label Margin="0,40,0,0" Text="Hence he was a real genius is sumo, in 2007, at the of 22 he became the 69st Yokozuna in the history of sumo and became the true champion until 2021, when he retired."/>
+                <Label Margin="0,40,0,0" Text="After the retirement he became the oyakata (stable master) of the Miyagino stable where he has several wrestlers who fight in the top division to become a Yokozuna like they master."/>
+            </StackLayout>
+    </ScrollView>
+        </Grid>
+</ContentPage>

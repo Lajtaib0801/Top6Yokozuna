@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tool="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:Class="Top6Yokozuna.Page2"
+             Title="II. Taihō Kōki"
+             Shell.BackgroundColor="Black"
+             BackgroundImageSource="dohyo.jpg">
+    <ContentPage.Behaviors>
+        <tool:StatusBarBehavior StatusBarColor="Black"/>
+    </ContentPage.Behaviors>
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontFamily" Value="riit"/>
+            <Setter Property="FontSize" Value="Body"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+    </ContentPage.Resources>
+        <Grid RowDefinitions="2*,3*">
+
+            <Border
+    Stroke="#C49B33"
+    StrokeThickness="6"
+    StrokeShape="RoundRectangle 40,40,40,40"
+    HorizontalOptions="Center"
+        Margin="0,100,0,0"
+        HeightRequest="350">
+                <Image Source="taiho.jpg" />
+            </Border>
+        <ScrollView Grid.Row="1" Margin="0,80,0,0">
+            <StackLayout Padding="5">
+                <Label Text="Real name: Ivan Boryshko (Іва́н Бори́шко)"/>
+                <Label Text="Born: May 29, 1940
+                             Shikuka, Karafuto, Japan"/>
+                <Label Text="Died: Janaury 19, 2013 (aged 72)
+             Shinjuku, Tokyo, Japan"/>
+                <Label   Text="Height: 6 ft 1.5 in (1.87 m)"/>
+                <Label   Text="Weight: 326 Ib (148 kg)"/>
+                <Label   Text="Stable: Nishonoseki"/>
+                <Label   Text="Debut: September 1956"/>
+                <Label   Text="Retired: May 1971"/>
+                <Label   Text="Yusho (tournaments won): 32 Makuuchi, 1 Juryo, 1 Sandanme"/>
+
+                <Label Margin="0,40,0,0" Text="Taiho was born Ivan Boryshko (Ukranian: Іва́н Бори́шко) in the town of Shikuka (currently Poronaysk, Sakhain Oblast, Russia) in South Sakhalin to a Japanese mother and an ethnic Ukranian father. When the Soviet Union invaded South Sakhalin he fled to Hokkaido. He was living in poverty, selling natto on the streets when the Nishonoseki stable came to Hokkaido to recruit professional suo wrestlers. He was one of them who was recruited and could become a wrestler."/>
+                <Label Margin="0,40,0,0" Text="5 years passed since his first debut, when he became Yokozuna in the September of 1961 and also one of the most successful Yokozunas ever. After the war he was the youngest wrestler who was promoted to Yokozuna (at the age of 21). The record subsequently surpassed by Kitanoumi who was one month younger."/>
+                <Label Margin="0,40,0,0" Text="After his retirement in 1971 he became a sumo elder and when he reached the mandatory retirement of the age of 65 he became the curator of the Sumo Museum at the Ryogoku Kokugikan, Tokyo until his death in 2013, 19th of January."/>
+            </StackLayout>
+    </ScrollView>
+        </Grid>
+</ContentPage>

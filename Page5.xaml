@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tool="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:Class="Top6Yokozuna.Page5"
+             Title="V. Kitanoumi Toshimitsu"
+             Shell.BackgroundColor="Black"
+             BackgroundImageSource="dohyo.jpg">
+    <ContentPage.Behaviors>
+        <tool:StatusBarBehavior StatusBarColor="Black"/>
+    </ContentPage.Behaviors>
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontFamily" Value="riit"/>
+            <Setter Property="FontSize" Value="Body"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+    </ContentPage.Resources>
+    <Grid RowDefinitions="2*,3*">
+
+        <Border
+Stroke="#C49B33"
+StrokeThickness="6"
+StrokeShape="RoundRectangle 40,40,40,40"
+HorizontalOptions="Center"
+    Margin="0,100,0,0"
+    HeightRequest="350">
+            <Image Source="kitanoumi.jpg" />
+        </Border>
+        <ScrollView Grid.Row="1" Margin="0,80,0,0">
+        <StackLayout Padding="5">
+                <Label Text="Real name: Toshimitsu Obata"/>
+                <Label Text="Born: May 16, 1953
+                            Sobetsu, Hokkaido, Japan"/>
+                <Label Text="Died: November 20, 2015 (age 62)
+                             Fukuoka, Japan"/>
+                <Label   Text="Height: 5 ft 10.5 in (1.79 m)"/>
+                <Label   Text="Weight: 375 Ib (170 kg)"/>
+                <Label   Text="Stable: Mihogaseki"/>
+                <Label   Text="Debut: January 1967"/>
+                <Label   Text="Retired: January 1985"/>
+                <Label   Text="Yusho (tournaments won): 24 Makuuchi"/>
+
+                <Label Margin="0,40,0,0" Text="He was the seventh of eight siblings, and the fourth son, and his father worked for the Japan Agricultural Cooperatives in the Usu District in Hokkaido. He practiced judo and due to his big stature, he was recruited for professional sumo and he joined Mihogaseki stable."/>
+                <Label Margin="0,40,0,0" Text="Kitanoumi was the most successful wrestler in sumo for the rest of the 1970s. His dominance, and perceived stern demeanor, meant that he was not that popular with the general public. When he was defeated by underdog Takanohana in a playoff for the championship in September 1975, the audience threw so many cushions into the ring in delight, that Kitanoumi said he could 'hardly see the ceiling'. He was known for not offering a defeated opponent a hand to get back to their feet, and was also notoriously monosyllabic when being interviewed by reporters."/>
+                <Label Margin="0,40,0,0" Text="His best year was 1978, when he won 5 of the 6 tournaments and won 82 out of a possible 90 bouts, a record that stood until 2005."/>
+                <Label Margin="0,40,0,0" Text="Kitanoumi was honored for his great achievements by being offered membership of the Japan Sumo Association without having to purchase a share. He was the second rikishi after Taiho to be given this honor. As a result, he was able to keep his sumo name after retirement. He opened up his own training stable, Kitanoumi stable, taking several wrestlers from Mihogaseki stable who had already been under his wing. Kitanoumi stable is one of the largest in sumo, and has produced a handful of top division wrestlers over the years."/>
+                <Label Margin="0,40,0,0" Text="Kitanoumi died of colorectal cancer and multiple organ failure on the evening of November 20, 2015. He was in Fukuoka for the Kyushu tournament and was taken to the hospital in the morning. A memorial service was held on December 22 at the Ryogoku Kokugikan. "/>
+            </StackLayout>
+    </ScrollView>
+    </Grid>
+</ContentPage>

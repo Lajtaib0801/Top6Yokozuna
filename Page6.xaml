@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tool="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:Class="Top6Yokozuna.Page6"
+             Title="VI. Takanohana Kōji"
+             Shell.BackgroundColor="Black"
+             BackgroundImageSource="dohyo.jpg">
+    <ContentPage.Behaviors>
+        <tool:StatusBarBehavior StatusBarColor="Black"/>
+    </ContentPage.Behaviors>
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontFamily" Value="riit"/>
+            <Setter Property="FontSize" Value="Body"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+    </ContentPage.Resources>
+    <Grid RowDefinitions="2*,3*">
+
+        <Border
+Stroke="#C49B33"
+StrokeThickness="6"
+StrokeShape="RoundRectangle 40,40,40,40"
+HorizontalOptions="Center"
+    Margin="0,100,0,0"
+    HeightRequest="350">
+            <Image Source="takanohana.jpg" />
+        </Border>
+        <ScrollView Grid.Row="1" Margin="0,80,0,0">
+            <StackLayout Padding="5">
+                <Label Text="Real name: Koji Hanada"/>
+                <Label Text="Born: August 12, 1972
+Suginami, Tokyo, Japan"/>
+                <Label   Text="Height: 6 ft 1 in (1.85 m)"/>
+                <Label   Text="Weight: 340 Ib (154 kg)"/>
+                <Label   Text="Stable: Fujishima ➔ Futagoyama"/>
+                <Label   Text="Debut: March 1988"/>
+                <Label   Text="Retired: January 2003"/>
+                <Label   Text="Yusho (tournaments won): 22 Makuuchi, 2 Makushita"/>
+
+
+                <Label Margin="0,40,0,0" Text="Takanohana comes from a family with a great sumo history, sometimes called the 'Hanada Dynasty.' His uncle Wakanohana Kanji I was a yokozuna from 1958 to 1962, and his father Takanohana Kenshi had held the second highest rank of ozeki for a then record 50 tournaments from 1972 to 1981. He had been practicing sumo since elementary school and won the equivalent of a yokozuna title in junior high school."/>
+                <Label Margin="0,40,0,0" Text="After 7 years of his debut, he acquired the highest rank in 1995. He was at his peak as a yokozuna between 1995 and 1997, during which time he won 11 of the 17 tournaments he entered, finishing runner-up in the other six. He produced two more perfect scores of 15–0, in September 1995 and September 1996. "/>
+                <Label Margin="0,40,0,0" Text="Overall he won 80 out of 90 bouts he fought in 1995, 70 out of 75 in 1996, and 78 out 90 in 1997, far ahead of any other wrestler. In three of the tournaments Takanohana did not win during this period, he was defeated by stablemates in playoffs: once to his brother and twice to ozeki Takanonami."/>
+                <Label Margin="0,40,0,0" Text="Because of his great achievements in sumo he was given a bonus of 130 million yen and was also made a 'one generation' elder without having to purchase a share in the Association. This enabled him to keep his fighting name and he is now known as Takanohana Oyakata, because he became a stablemaster."/>
+        </StackLayout>
+    </ScrollView>
+    </Grid>
+</ContentPage>

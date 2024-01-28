@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tool="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:Class="Top6Yokozuna.Page4"
+             Title="IV. Asashōryū Akinori"
+             Shell.BackgroundColor="Black"
+             BackgroundImageSource="dohyo.jpg">
+    <ContentPage.Behaviors>
+        <tool:StatusBarBehavior StatusBarColor="Black"/>
+    </ContentPage.Behaviors>
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontFamily" Value="riit"/>
+            <Setter Property="FontSize" Value="Body"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+    </ContentPage.Resources>
+    <Grid RowDefinitions="2*,3*">
+
+        <Border
+Stroke="#C49B33"
+StrokeThickness="6"
+StrokeShape="RoundRectangle 40,40,40,40"
+HorizontalOptions="Center"
+    Margin="0,100,0,0"
+    HeightRequest="350">
+            <Image Source="asashoryu.jpg" />
+        </Border>
+        <ScrollView  Grid.Row="1" Margin="0,80,0,0">
+        <StackLayout Padding="5">
+                <Label Text="Real name: Dolgorsurengiin Dagvadorj (Долгорсүрэнгийн Дагвадорж)"/>
+                <Label Text="Born: September 17, 1980
+                            Ulaanbaatar, Mongolia"/>
+                <Label   Text="Height: 6 ft 1 in (1.85 m)"/>
+                <Label   Text="Weight: 340 Ib (154 kg)"/>
+                <Label   Text="Stable: Wakamatsu ➔ Takasago"/>
+                <Label   Text="Debut: January 1999"/>
+                <Label   Text="Retired: January 2010"/>
+                <Label   Text="Yusho (tournaments won): 25 Makuuchi, 1 Makushita, 1 Sandanme, 1 Jonidan"/>
+                <Label Margin="0,40,0,0" Text="Asashoryu comes from an ethnic Mongol family with a strong background in Mongolian wrestling. He also trained in judo in Mongolia. He originally came to Japan as an exchange student with his friend. They both trained together at the sumo club in they school."/>
+                <Label Margin="0,40,0,0" Text="He was an immensely talented, he needed only 4 years to become the highest ranked wrestler in the March of 2003. With time he gradually became more and more dominant, and there was only one person, who had real chance time to time to defeat him. (He was the wrestler on the first page by the way.)"/>
+                <Label Margin="0,40,0,0" Text="During the January 2010 tournament, a tabloid magazine claimed Asashoryu punched his personal manager after getting drunk during a night out in downtown Nishiazabu. After the tournament Asashoryu was reprimanded by Japan Sumo Association head Musashigawa, and he apologised once again for his behaviour. However, it subsequently emerged that it was not his manager but a restaurant employee who was attacked, reportedly sustaining a broken nose. The man did not file a report with the police, and on 31 January 2010, Asashoryu told the authorities that he had reached a settlement with him. Subsequently, on 4 February 2010, he announced his decision to retire, after discussing the matter at a meeting with the Board of Directors of the Sumo Association."/>
+                <Label Margin="0,40,0,0" Text="Immediately after his retirement from sumo there was speculation that Asashoryu would switch to mixed martial arts, and he was reported to be forming an MMA camp for Mongolian athletes.However, instead he became a businessman. "/>
+            </StackLayout>
+    </ScrollView>
+    </Grid>
+</ContentPage>
